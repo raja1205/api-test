@@ -5,12 +5,12 @@ const dotenv = require("dotenv").config();
 // Initialize Express
 const app = express();
 const cors = require("cors");
+app.use(cors({
+    origin: 'https://raja1205.netlify.app',
+}))
 
 const MongoClient = require("mongodb").MongoClient;
 const client = new MongoClient(process.env.DB_URL);
-
-//Get Projects data
-const getProjectsData = 
 
 // Create GET request
 app.get("/", (req, res) => {
