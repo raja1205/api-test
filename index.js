@@ -6,7 +6,7 @@ const dotenv = require("dotenv").config();
 const app = express();
 const cors = require("cors");
 app.use(cors({
-    origin: 'https://raja1205.netlify.app',
+    origin: 'https://raja1205.netlify.app'
 }))
 
 const MongoClient = require("mongodb").MongoClient;
